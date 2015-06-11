@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <h1>Moro</h1>
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>{{request.user.username}}</td>
+            </tr>
+            <tr>
+                <td>First</td>
+                <td>{{request.user.first_name}}</td>
+            </tr>
+            <tr>
+                <td>Last</td>
+                <td>{{request.user.last_name}}</td>
+            </tr>
+            <tr>
+                <td>UUID</td>
+                <td>{{request.user.uuid}}</td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>{{request.user.department_name}}</td>
+            </tr>
+        </table>
+    </body>
+</html>

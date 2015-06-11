@@ -1,0 +1,3 @@
+Django
+django-allauth
+git+https://github.com/City-of-Helsinki/django-helusers.git#egg=django-helusers
