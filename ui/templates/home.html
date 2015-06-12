@@ -37,6 +37,14 @@
                 <td>Department</td>
                 <td>{{request.user.department_name}}</td>
             </tr>
+            <tr>
+                <td>Token for <i>api.hel.fi/sso</i></td>
+                <td>{{request.user.socialaccount_set.first.socialtoken_set.first.token}}
+            </tr>
+            <tr>
+                <td>JWT for Linked Events</td>
+                <td>{{jwt_token}}
+            </tr>
         </table>
     </body>
 </html>
